@@ -65,8 +65,9 @@ export default function Navigation() {
         </div>
 
         <div className="flex items-center" style={{ gap: "1rem" }}>
-          <a
-            href={SITE.phoneHref}
+          <button
+            type="button"
+            onClick={() => window.dispatchEvent(new CustomEvent("kador:book"))}
             className="hidden sm:inline-flex items-center"
             style={{
               fontSize: "0.78rem",
@@ -79,7 +80,7 @@ export default function Navigation() {
             }}
           >
             Book the chair
-          </a>
+          </button>
 
           <button
             aria-label="Menu"

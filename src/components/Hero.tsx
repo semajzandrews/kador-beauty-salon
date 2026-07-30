@@ -101,8 +101,9 @@ export default function Hero() {
               className="flex flex-wrap items-center"
               style={{ gap: "1rem", marginTop: "2.2rem" }}
             >
-              <a
-                href={SITE.phoneHref}
+              <button
+                type="button"
+                onClick={() => window.dispatchEvent(new CustomEvent("kador:book"))}
                 className="inline-flex items-center"
                 style={{
                   padding: "0.95rem 1.7rem",
@@ -115,7 +116,7 @@ export default function Hero() {
                 data-cursor
               >
                 Book your chair
-              </a>
+              </button>
               <a
                 href="#services"
                 onClick={(e) => {

@@ -59,7 +59,7 @@ export default function Visit() {
                   Hours
                 </div>
                 <p style={{ marginTop: "0.5rem", fontSize: "1.05rem", color: "var(--pearl-dim)", lineHeight: 1.5 }}>
-                  Call ahead to book your chair or check today&rsquo;s hours.
+                  Book your chair online, or call ahead to check today&rsquo;s hours.
                 </p>
               </div>
 
@@ -78,7 +78,7 @@ export default function Visit() {
                 }}
                 data-cursor
               >
-                Call to book
+                Call the salon
               </a>
             </div>
           </motion.div>

@@ -13,6 +13,7 @@ const Story = dynamic(() => import("./Story"), { ssr: false });
 const Proof = dynamic(() => import("./Proof"), { ssr: false });
 const Visit = dynamic(() => import("./Visit"), { ssr: false });
 const Footer = dynamic(() => import("./Footer"), { ssr: false });
+const BookingModal = dynamic(() => import("./BookingModal"), { ssr: false });
 
 export default function ClientLayout() {
   return (
@@ -29,6 +30,7 @@ export default function ClientLayout() {
         <Visit />
       </main>
       <Footer />
+      <BookingModal />
     </SmoothScroll>
   );
 }
